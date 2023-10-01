@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+    <style>
+        dialog{
+            background-color: teal;
+            color: white;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>DETAILS TAG...!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore cum aliquid eveniet molestiae sunt quia hic dolor consequuntur, eligendi dolorum id, architecto maiores ipsum quo fugiat possimus tempora deserunt voluptatibus?</p>
+    </center>
+    <hr>
+
+    <center>
+        <h3>This is SUMMARY tag...!</h3>
+        <P>the <b>HTML SUMMARY</b> tag is used with <b>DETAILS</b> yag. It is used as a summary, caption or legend for the content of adetails element.</P>
+    </center>
+    <hr>
+
+    <details>
+        <summary>HTML</summary>
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi quae consequatur perferendis ratione laudantium earum? Quod saepe, sunt fugiat facilis veniam, alias deserunt laboriosam animi molestias modi id eveniet.</p>
+    </details>
+    <details>
+        <summary>CSS</summary>
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi quae consequatur perferendis ratione laudantium earum? Quod saepe, sunt fugiat facilis veniam, alias deserunt laboriosam animi molestias modi id eveniet.</p>
+    </details>
+    <details>
+        <summary>JS</summary>
+        <h1>JS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi quae consequatur perferendis ratione laudantium earum? Quod saepe, sunt fugiat facilis veniam, alias deserunt laboriosam animi molestias modi id eveniet.</p>
+    </details>  
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto sed, quidem aspernatur dolorem quaerat ipsa iste quam quis <time>explicabo</time> dicta deserunt mollitia temporibus doloremque culpa, omnis exercitationem quisquam laudantium distinctio!</p>
+    <hr>
+
+    <center>
+        <h3>This is Dialog tag.....!</h3>
+        <p><b>( This tag to createva new popup dialog on a web page. )</b></p>
+    </center>
+    <hr>
+
+    <dialog id="dialogId">
+        <button type="button" id="closeDialog">Open Dialog tag</button>
+
+        <h1>FULLSTACK</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora aspernatur eaque molestiae ducimus facilis molestias quidem debitis eveniet ipsum consequuntur, autem maxime, esse alias, rerum dolorem exercitationem voluptas. At, nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aspernatur sequi dolore neque. Velit, fuga! Quidem soluta itaque nobis voluptates, sint sed sit ad, accusantium odit eos dolorem iusto nam?</p>
+    </dialog>
+
+    <button type="button" id="openDialog">Open Dialog tag</button>
+
+    <script>
+        document.getElementById("openDialog").onclick=function(){
+            document.getElementById("dialogId").show();
+        };
+        document.getElementById("closeDialog").onclick=function(){
+            document.getElementById("dialogId").show();
+        };
+    </script>
+</body>
+</html>

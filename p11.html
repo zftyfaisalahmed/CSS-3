@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>This is Canvas Tag</h1>
+        <p>
+            The html canvas element provides html a bitmaps surface to work with. Itis used to draw graphics on the web page
+            The <b>HTML 5 canvas tag</b> is used to draw graphics using scripting language like javascript 
+        </p>
+    </center>
+    <hr>
+
+    <canvas>This is First Canvas Tag</canvas>
+
+    <canvas id="myCanvas2" width="300px" height="100ox" style="border:2px solid red;"></canvas>
+
+    <p><b>Note : It is always necessary to specify the id attribute and the heightand width attributeto define the sie of the canvas. You can have multiple canvas elements on one HTML page</b></p>
+
+    <hr>
+
+    <canvas id="myCanvas3" width="250" height="150" style="border: 1px solid blue;"></canvas>
+
+    <script>
+        let canvas3 = document.getElementById("myCanvas3").getContext("2d");
+        canvas3.fillStyle = "grey";
+        canvas3.fillRect(25,25, 200,100)
+    </script>
+    <hr>
+
+    <canvas>
+        <h3>This is First Canvas Tag</h3>
+    </canvas>
+
+    <canvas id="myCanvasCircle" width="200" height="200" style="border:1px solid green;"></canvas>
+
+    <script>
+        let myCanvasCircle = document.getElementById("myCanvasCircle").getContext("2d");
+        myCanvasCircle.fillStyle = "grey";
+        myCanvasCircle.arc(100,100, 90, 0, 2*Math.PI);
+        myCanvasCircle.fill();
+    </script>    
+    <hr>
+
+    <canvas>
+        <h3>Drawing text on Canvas Tag</h3>
+    </canvas>
+
+    
+    <canvas id="textCanvas" width="578" height="200" style="border:1px solid teal;"></canvas>
+
+    <script>
+        let textCanvas = document.getElementById("textCanvas").getContext("2d");
+        textCanvas.font = "40pt Times of Roman";
+        textCanvas.fillStyle = "red";
+        textCanvas.fillText("Hello HTML-5", 120 , 100);
+    </script>
+    <hr>
+</body>
+</html>
